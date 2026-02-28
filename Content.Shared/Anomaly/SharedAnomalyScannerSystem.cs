@@ -55,6 +55,16 @@ public abstract class SharedAnomalyScannerSystem : EntitySystem
         if (!args.CanReach)
             return;
 
+        // Floofstation - If interacting with another scanner, copy the anomaly data
+        if ((component.ScannedAnomaly is not { Valid: true } || Deleted(component.ScannedAnomaly))
+            && TryComp<AnomalyScannerComponent>(args.Target, out var otherScanner)
+            && otherScanner.ScannedAnomaly is {} otherAnomaly)
+        {
+            UpdateScannerWithNewAnomaly(uid, otherAnomaly, component);
+            Popup.PopupEntity(Loc.GetString("anomaly-scanner-scan-copied"), uid);
+            Audio.PlayPredicted(component.CompleteSound, uid, args.User);
+        }
+
         var doAfterArgs = new DoAfterArgs(
             EntityManager,
             args.User,
@@ -83,4 +93,9 @@ public abstract class SharedAnomalyScannerSystem : EntitySystem
         args.Handled = true;
     }
 
+    // Floofstation - added this to the base system as a virtual method.
+    public virtual void UpdateScannerWithNewAnomaly(EntityUid scanner,
+        EntityUid anomaly,
+        AnomalyScannerComponent? scannerComp = null,
+        AnomalyComponent? anomalyComp = null) { }
 }
