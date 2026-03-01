@@ -900,7 +900,7 @@
 ## Captain
 - type: loadoutGroup
   id: CaptainGloves
-  parent: [FloofGloves] # Floofstation
+  parent: [FloofCaptainGloves, FloofGloves] # Floofstation
   name: loadout-group-captain-gloves
   minLimit: 0
   loadouts:
@@ -909,7 +909,7 @@
 
 - type: loadoutGroup
   id: CaptainShoes
-  parent: [FloofShoes] # Floofstation
+  parent: [FloofCaptainSocks, FloofShoes] # Floofstation
   name: loadout-group-captain-shoes
   loadouts:
   - BrownLeatherShoes
@@ -920,7 +920,7 @@
 ## Head of Personnel
 - type: loadoutGroup
   id: HoPGloves
-  parent: [FloofGloves] # Floofstation
+  parent: [FloofHopGloves, FloofGloves] # Floofstation
   name: loadout-group-hop-gloves
   minLimit: 0
   loadouts:
@@ -929,7 +929,7 @@
 
 - type: loadoutGroup
   id: HoPShoes
-  parent: [FloofShoes] # Floofstation
+  parent: [FloofHopSocks,FloofShoes] # Floofstation
   name: loadout-group-hop-shoes
   loadouts:
   - BrownLeatherShoes
@@ -940,7 +940,7 @@
 ## chift engenier
 - type: loadoutGroup
   id: ChiefEngineerGloves
-  parent: [FloofGloves] # Floofstation
+  parent: [FloofCeSocks, FloofGloves] # Floofstation
   name: loadout-group-chief-engineer-gloves
   minLimit: 0
   loadouts:
