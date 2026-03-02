@@ -860,3 +860,11 @@ Entries:
       message: Added CS;GO Knife Lootboxes for Logistics to order
   id: 105
   time: '2026-03-01T20:44:25.0000000+00:00'
+- author: Dunrab
+  changes:
+    - type: Add
+      message: >-
+        Map and Gamemode votes are now automatic again so admins don't need to
+        press buttons!
+  id: 106
+  time: '2026-03-02T07:14:54.0000000+00:00'
