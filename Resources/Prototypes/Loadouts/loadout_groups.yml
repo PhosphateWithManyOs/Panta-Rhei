@@ -16,13 +16,6 @@
   - PlushieBee
   # End DeltaV Additions
   - ThreeCandles
-  - Lighter
-  - CigPackGreen
-  - CigPackRed
-  - CigPackBlue
-  - CigPackBlack
-  - CigarCase
-  - CigarGold
   - BoxFolderBaseThreePapers
   - BoxFolderPlasticClipboardThreePapers
   - BoxFolderClipboardThreePapers
@@ -82,6 +75,7 @@
 
 - type: loadoutGroup
   id: Glasses
+  parent: [FloofGlasses]
   name: loadout-group-glasses
   minLimit: 0
   loadouts:
@@ -150,7 +144,7 @@
 
 - type: loadoutGroup
   id: CaptainJumpsuit
-  parent: [FloofJumpsuits] # Floofstation
+  parent: [FloofCaptainThong, FloofJumpsuits] # Floofstation
   name: loadout-group-captain-jumpsuit
   loadouts:
   - CaptainJumpsuit
@@ -205,7 +199,7 @@
 
 - type: loadoutGroup
   id: HoPJumpsuit
-  parent: [FloofJumpsuits] # Floofstation
+  parent: [FloofHopThong, FloofJumpsuits] # Floofstation
   name: loadout-group-hop-jumpsuit
   loadouts:
   - HoPJumpsuit
@@ -967,7 +961,7 @@
 
 - type: loadoutGroup
   id: QuartermasterJumpsuit
-  parent: [FloofJumpsuits] # Floofstation
+  parent: [FloofLoThong, FloofJumpsuits] # Floofstation
   name: loadout-group-quartermaster-jumpsuit
   loadouts:
   - QuartermasterJumpsuit
@@ -998,7 +992,7 @@
 
 - type: loadoutGroup
   id: QuartermasterShoes
-  parent: [FloofShoes] # Floofstation
+  parent: [FloofLoSocks, FloofShoes] # Floofstation
   name: loadout-group-quartermaster-shoes
   loadouts:
   - BrownShoes
@@ -1110,7 +1104,7 @@
 
 - type: loadoutGroup
   id: ChiefEngineerJumpsuit
-  parent: [FloofJumpsuits] # Floofstation
+  parent: [FloofCeThong, FloofJumpsuits] # Floofstation
   name: loadout-group-chief-engineer-jumpsuit
   loadouts:
   - ChiefEngineerJumpsuit
@@ -1144,7 +1138,7 @@
 
 - type: loadoutGroup
   id: ChiefEngineerShoes
-  parent: [FloofShoes] # Floofstation
+  parent: [FloofCeGloves, FloofShoes] # Floofstation
   name: loadout-group-chief-engineer-shoes
   loadouts:
   #- BrownShoes # DeltaV - Engi loadout rework
@@ -1340,7 +1334,7 @@
 
 - type: loadoutGroup
   id: ResearchDirectorJumpsuit
-  parent: [FloofJumpsuits] # Floofstation
+  parent: [FloofMystaThong, FloofJumpsuits] # Floofstation
   name: loadout-group-research-director-jumpsuit
   loadouts:
   - ResearchDirectorJumpsuit
@@ -1359,7 +1353,7 @@
 
 - type: loadoutGroup
   id: ResearchDirectorShoes
-  parent: [FloofShoes] # Floofstation
+  parent: [FloofMystaSocks, FloofShoes] # Floofstation
   name: loadout-group-research-director-shoes
   loadouts:
   - BrownShoes
@@ -1491,7 +1485,7 @@
 
 - type: loadoutGroup
   id: HeadofSecurityJumpsuit
-  parent: [FloofJumpsuits] # Floofstation
+  parent: [FloofSecurityJumpsuits, FloofHosThong, FloofJumpsuits] # Floofstation
   name: loadout-group-head-of-security-jumpsuit
   loadouts:
   - HeadofSecurityJumpsuit
@@ -1531,7 +1525,7 @@
 
 - type: loadoutGroup # DeltaV
   id: HeadofSecurityShoes
-  parent: [FloofShoes] # Floofstation
+  parent: [FloofHosSocks, FloofShoes] # Floofstation
   name: loadout-group-head-of-security-shoes
   loadouts:
   # Begin DeltaV changes
@@ -1604,7 +1598,7 @@
 
 - type: loadoutGroup
   id: SecurityJumpsuit
-  parent: [FloofJumpsuits] # Floofstation
+  parent: [FloofSecurityJumpsuits, FloofJumpsuits] # Floofstation
   name: loadout-group-security-jumpsuit
   loadouts:
   - SecurityJumpsuit
@@ -1695,6 +1689,7 @@
 
 - type: loadoutGroup
   id: DetectiveJumpsuit
+  parent: [FloofJumpsuits] # Floofstation
   name: loadout-group-detective-jumpsuit
   loadouts:
   - DetectiveJumpsuit
@@ -1704,7 +1699,7 @@
 
 - type: loadoutGroup
   id: DetectiveOuterClothing
-  parent: [FloofJumpsuits] # Floofstation
+  parent: [FloofOuterClothing] # Floofstation
   name: loadout-group-detective-outerclothing
   loadouts:
   - DetectiveArmorVest
@@ -1757,7 +1752,7 @@
 
 - type: loadoutGroup
   id: ChiefMedicalOfficerJumpsuit
-  parent: [FloofJumpsuits] # Floofstation
+  parent: [FloofCmoThong, FloofJumpsuits] # Floofstation
   name: loadout-group-chief-medical-officer-jumpsuit
   loadouts:
   - ChiefMedicalOfficerJumpsuit
@@ -1767,7 +1762,7 @@
 
 - type: loadoutGroup
   id: ChiefMedicalOfficerOuterClothing
-  parent: [FloofOuterClothing] # Floofstation
+  parent: [FloofMedicalOuterClothing, FloofOuterClothing] # Floofstation
   name: loadout-group-chief-medical-officer-outerclothing
   minLimit: 0
   loadouts:
@@ -1788,7 +1783,7 @@
 
 - type: loadoutGroup
   id: ChiefMedicalOfficerShoes
-  parent: [FloofShoes] # Floofstation
+  parent: [FloofCmoSocks, FloofShoes] # Floofstation
   name: loadout-group-chief-medical-officer-shoes
   loadouts:
   - BrownShoes
@@ -1831,7 +1826,7 @@
 
 - type: loadoutGroup
   id: MedicalDoctorOuterClothing
-  parent: [FloofOuterClothing] # Floofstation
+  parent: [FloofMedicalOuterClothing, FloofOuterClothing] # Floofstation
   name: loadout-group-medical-doctor-outerclothing
   minLimit: 0
   loadouts:
@@ -1841,7 +1836,7 @@
 
 - type: loadoutGroup
   id: MedicalBackpack
-  parent: [FloofBackpacks] # Floofstation
+  parent: [FloofParamedBackpacks, FloofBackpacks] # Floofstation
   name: loadout-group-medical-doctor-backpack
   loadouts:
   - MedicalDoctorBackpack
@@ -1906,7 +1901,7 @@
 
 - type: loadoutGroup
   id: ChemistJumpsuit
-  parent: [FloofGloves] # Floofstation
+  parent: [FloofJumpsuits] # Floofstation
   name: loadout-group-chemist-jumpsuit
   loadouts:
   - ChemistJumpsuit
@@ -1916,7 +1911,7 @@
 
 - type: loadoutGroup
   id: ChemistOuterClothing
-  parent: [FloofOuterClothing] # Floofstation
+  parent: [FloofMedicalOuterClothing, FloofOuterClothing] # Floofstation
   name: loadout-group-chemist-outerclothing
   minLimit: 0
   loadouts:
@@ -1959,7 +1954,7 @@
 
 - type: loadoutGroup
   id: ParamedicOuterClothing
-  parent: [FloofOuterClothing] # Floofstation
+  parent: [FloofMedicalOuterClothing, FloofOuterClothing] # Floofstation
   name: loadout-group-paramedic-outerclothing
   minLimit: 0
   loadouts:
@@ -2115,3 +2110,27 @@
   hidden: False #euphoria change for vox masks
   loadouts:
   - LoadoutSpeciesBreathToolSecurity
+
+- type: loadoutGroup # Euphoria - Seperated Smokables from Trinkets
+  id: Smokeables
+  name: loadout-group-smokables
+  minLimit: 0
+  maxLimit: 2
+  loadouts:
+  - Lighter
+  - CheapLighter
+  - FlippoLighter
+  - FlippoEngravedLighter
+  - CybersunFlippo
+  - InterdyneFlippo
+  - NanotrasenFlippo
+  - CigPackGreen
+  - CigPackRed
+  - CigPackBlue
+  - CigPackBlack
+  - CigarCase
+  - CigarGold
+  - CigPackSyndicate
+  - CigPackMixed
+  - Blunt
+  - Joint

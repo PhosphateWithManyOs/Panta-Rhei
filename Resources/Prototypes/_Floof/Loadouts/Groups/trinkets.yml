@@ -5,14 +5,16 @@
   loadouts:
   - LeashBasic
   - RemoteSignaller
+  - FishingRodMakeshift
+  - FishingRod
+  - FishingRodGoon
+  - HandheldStationMap
   - GuitarInstrument
   - BassGuitarInstrument
   - ElectricGuitarInstrument
   - RockGuitarInstrument
   - HarmonicaInstrument
   - TrumpetInstrument
-  - Blunt
-  - Joint
   - CrowbarRed
   - FlashlightLantern
   - DoubleEmergencyOxygenTankFilled
@@ -21,6 +23,10 @@
   - MedkitFilled
   - LunchboxGenericFilledRandom
   - CrayonBrush
+  - CrayonMagic
+  - LuxuryPen
+  - BookBase
+  - Paper
   - AvianDildo
   - CanineDildo
   - CanineDildoRed
@@ -39,3 +45,8 @@
   - LewdFleshlightRed
   - LewdFleshlightTeal
   - LewdFleshlightYellow
+  - LewdWand
+  - WhipPinkCrotch
+  - WhipPink
+  - WhipTealCrotch
+  - WhipTeal
