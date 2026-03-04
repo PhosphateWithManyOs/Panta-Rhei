@@ -885,14 +885,16 @@
 
 - type: loadout
   id: Blunt
-  equipment:
-    back: Blunt
+  storage:
+    back:
+    - Blunt
   groupBy: "smokeables"
 
 - type: loadout
   id: Joint
-  equipment:
-    back: Joint
+  storage:
+    back:
+    - Joint
   groupBy: "smokeables"
 
 - type: loadout
