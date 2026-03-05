@@ -1047,3 +1047,17 @@ Entries:
       message: Updated the slimetender texture
   id: 129
   time: '2026-03-05T07:22:25.0000000+00:00'
+- author: Raikyr0
+  changes:
+    - type: Add
+      message: Ported pets (please understand they won't follow you yet)
+    - type: Add
+      message: Added 4 new pets.
+    - type: Remove
+      message: Removed pet cockroach
+    - type: Tweak
+      message: >-
+        Made it so pets understand Tau Ceti (can't speak it) so you can talk to
+        them.
+  id: 130
+  time: '2026-03-05T09:15:22.0000000+00:00'
