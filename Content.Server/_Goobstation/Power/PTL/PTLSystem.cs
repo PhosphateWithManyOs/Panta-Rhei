@@ -91,8 +91,8 @@ public sealed partial class PTLSystem : EntitySystem
     private void Shoot(Entity<Shared._Goobstation.Power.PTL.PTLComponent, BatteryComponent> ent)
     {
         var megajoule = 1e6;
-        var maxSpesos = 5000;
-        var chargeCoeff = 2;
+        var maxSpesos = 5000;//Euphoria
+        var chargeCoeff = 2;//Euphoria
         var charge = _battery.GetCharge((ent, ent.Comp2)) / megajoule;
         // Euphoria - Modeled after real capacitors.
         var spesos = (int) (maxSpesos * (1 - Math.Exp(-chargeCoeff * charge)));
